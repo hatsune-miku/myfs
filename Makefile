@@ -25,9 +25,10 @@ CFLAGS=	-g -Wall `pkg-config --cflags fuse` \
 
 LDFLAGS=`pkg-config --libs fuse` -fsanitize=address
 
+#	example.o
+
 OBJS=\
 	assign5.o \
-	example.o \
 	main.o \
 
 all: run-assign5
@@ -35,7 +36,7 @@ run-assign5: ${OBJS}
 	${CC} ${OBJS} ${CFLAGS} ${LDFLAGS} -o run-assign5
 
 # Express header dependencies: recompile these object files if header changes
-example.o: assign5.h
+# example.o: assign5.h
 fuse.o: assign5.h
 main.o: assign5.h
 
