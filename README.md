@@ -38,3 +38,22 @@ static const char* features =
 ### HashMap
 
 - Linear array + hash function + linked list
+
+## Usage
+
+```sh
+$ mkdir tmp
+$ ./run-assign5 -d tmp myfilesystem.dat
+```
+
+open another terminal
+
+```sh
+cd /path/to/tmp
+cat assignment/features
+cat assignment/username
+mkdir -p a/b/c/d/e/f
+tree .
+echo "hello world" > a/b/c/ddd.txt
+# ...
+```
