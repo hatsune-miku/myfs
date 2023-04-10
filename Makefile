@@ -14,9 +14,11 @@
 # limitations under the License.
 #
 
+#	-D USING_USE_EXAMPLE
+
+
 CFLAGS=	-g -Wall `pkg-config --cflags fuse` \
 	-I /usr/include/fuse \
-	-D USE_EXAMPLE111111111 \
 	-D_FILE_OFFSET_BITS=64 \
 	-lfuse \
 	-fsanitize=address -fno-omit-frame-pointer
